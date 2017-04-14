@@ -1,0 +1,30 @@
+<ion-content class="niveau al-content">
+  <!-- Setting button -->
+  <al-btn-menu></al-btn-menu>
+  <al-top-aside [niveauAPasser]="lecon.niveau" [niveauADecouvrir]="palier.niveauAPasser"></al-top-aside>
+  <ion-grid class="al-performance">
+    <button ion-button class="al-title-lecon">{{ lecon.description }}</button>
+    <br>
+
+    <al-recap-question [typeEntrainement]="type" [exerciceNumber]="nbExercice" [validQuestion]="nbValid"></al-recap-question>
+
+    <ion-row class="al-tab-performance" padding>
+      <p col-12>{{ question.question }}</p><br>
+
+      <form (ngSubmit)="checkResponse(form.value)" [formGroup]="form">
+        <ion-item>
+          <ion-input formControlName="response" type="text" placeholder="Reponse ?"></ion-input>
+        </ion-item>
+        <button ion-button round type="submit" small color="secondary">Valider</button>
+      </form>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col col-2>
+        <p (click)="goBack()"><img src="assets/images/arrow.png" alt="arrow" style="transform: rotate(-90deg)" ></p>
+      </ion-col>
+      <ion-col col-12></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-content class="niveau al-content">
+  <!-- Setting button -->
+  <al-btn-menu></al-btn-menu>
+
+  <al-top-aside [niveauAPasser]="lecon.niveau" [niveauADecouvrir]="palier.niveauAPasser"></al-top-aside>
+
+  <al-header [matiere]="lecon.title"></al-header>
+
+  <ion-grid padding class="al-performance">
+    <button ion-button class="al-title-lecon al-bg-red">{{ lecon.description }}</button>
+    <al-challange
+      [niveauAPasser]="ptNiveau"
+      [animalADecouvrir]="ptAnimal"
+      [caurisADecrocher]="lecon.caurisAGagner"
+      [pointAGagner]="pointAGanger()">
+    </al-challange>
+
+
+    <ion-row>
+      <ion-col col-12><button ion-button round #comp page-entrainement (click)="openEntrainement(lecon)">Je m'entraine</button></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

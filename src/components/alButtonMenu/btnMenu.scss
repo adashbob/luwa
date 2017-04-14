@@ -1,0 +1,21 @@
+.al-btn-menu{
+  padding: 0;
+  .al-col-nav{
+    height: 50px;
+    width: 50px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    margin: 2px;
+    color: white;
+    background-image: url("../assets/img/5-01.png");
+    background-size: cover;
+  }
+}
+
+ion-app.md [margin], ion-app.md [margin] .scroll-content {
+  margin: inherit;
+}

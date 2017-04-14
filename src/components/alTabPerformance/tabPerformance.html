@@ -1,0 +1,33 @@
+<ion-grid class="al-performance">
+
+  <h1>Niveau <span style="font-family:sugarpunch; font-size: 23px;">{{ currentlevel }}</span></h1>
+
+  <ion-row class="al-tab-performance" padding>
+    <ion-col col-4 *ngFor="let i of range(3)">
+      <div style="margin-bottom: 10px;">
+        <img #comp page-niveau (click)="openNiveau(palier)" src="assets/images/chiffre.png" alt="dd" style="width: 30%; margin-left: 10px;">
+        <img src="assets/images/question.png" alt="dd"  style="width: 30%; margin-left: 5px;">
+      </div>
+      <div *ngFor="let j of range(5)" style="margin-bottom: 10px;">
+        <img src="assets/images/suitecase.png" alt="dd" style="width: 30%; margin-left: 10px;">
+        <img src="assets/images/question.png" alt="dd"  style="width: 30%; margin-left: 5px;">
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row no-padding class="al-btn-performance">
+    <ion-col class="al-btn-performance-palier" margin>Performance palier</ion-col>
+    <ion-col class="al-btn-performance-general" margin>Performance générale</ion-col>
+  </ion-row>
+  <br>
+
+  <ion-row>
+    <ion-col col-2>
+      <p (click)="goBack()"><img src="assets/images/arrow.png" alt="arrow" style="transform: rotate(-90deg)" ></p>
+    </ion-col>
+    <ion-col col-8></ion-col>
+    <ion-col col-2>
+      <p (click)="goNext()"><img src="assets/images/arrow.png" alt="arrow" style="transform: rotate(90deg)" ></p>
+    </ion-col>
+  </ion-row>
+</ion-grid>

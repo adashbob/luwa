@@ -1,0 +1,46 @@
+
+
+<ion-content padding>
+  <button ion-button round block icon-left>
+    <ion-icon class="ion ion-ios-arrow-back"></ion-icon>
+    Back
+  </button>
+
+
+  <div class="al-grammaire">
+    <ion-slides>
+      <ion-slide *ngFor="let item of silideItems ">
+        <ion-card>
+          <img src="assets/img/slide/{{ item.img }}" style="width: 70%;">
+          <ion-card-content>
+            <p>{{ item.text }}</p>
+          </ion-card-content>
+
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="logo-buffer"></ion-icon>
+                <div>{{ item.level }} Level</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="ios-create"></ion-icon>
+                <div>{{ item.score }} Scors</div>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <button ion-button icon-left clear small>
+                <ion-icon name="ios-contacts"></ion-icon>
+                <div>{{ item.note }}</div>
+              </button>
+              <!-- <ion-note>ios-contacts
+                 {{ item.note }}
+               </ion-note>-->
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

@@ -1,0 +1,15 @@
+<!-- Menu -->
+<ion-menu [content]="content">
+  <ion-content class="al-menu">
+    <ion-title>
+      <h1>JOUEUR</h1>
+    </ion-title>
+    <ion-list>
+      <button  menuClose ion-item *ngFor="let p of pages" (click)="navPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

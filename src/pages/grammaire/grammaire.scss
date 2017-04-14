@@ -1,0 +1,16 @@
+page-grammaire {
+  .al-grammaire{ margin-top: 50px;}
+
+
+  ion-icon[name="menu"]{font-size: 30px;}
+
+  ion-content{
+    ion-slides{
+      margin: auto;
+      width: 100%;
+      border: 3px solid #4c800b;
+      padding: 10px;
+      border-radius: 4px;
+    }
+  }
+}

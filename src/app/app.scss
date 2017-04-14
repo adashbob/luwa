@@ -1,0 +1,101 @@
+/*-----------------------------------*\
+    BODY
+\*-----------------------------------*/
+.al-content{
+  background-image: url("../assets/img/26-01.png");
+  background-size: cover;
+}
+
+
+
+/*-----------------------------------*\
+    BASE
+\*-----------------------------------*/
+@font-face {
+  font-family: 'sketch';
+  src: url(../assets/font/Sketch.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'ubuntuMono';
+  src: url(../assets/font/ubuntuMono/UbuntuMono-R.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'jeansFashions';
+  src: url(../assets/font/JeansFashions.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'verde';
+  src: url(../assets/font/verde.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Amperzand';
+  src: url(../assets/font/Amperzand.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'candyPop';
+  src: url(../assets/font/candyPop-font.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'sugarpunch';
+  src: url(../assets/font/sugarpunch.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'hobostd';
+  src: url(../assets/font/hobo-std.ttf) format('truetype');
+}
+
+.al-bg-red{
+  background-color: rgba(245, 23, 23, 0.49);
+}
+
+/*-----------------------------------*\
+    Title Lecon
+\*-----------------------------------*/
+.al-title-lecon{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(245, 23, 23, 0.49);
+  //width: 80%;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+
+/*-----------------------------------*\
+
+\*-----------------------------------*/
+.md .menu-inner{
+  background-color: inherit;
+  background-color: rgba(255, 23, 23, 0.0);
+}
+
+.al-menu{
+  background-color: rgba(7, 7, 7, 0.9);
+
+  h1{
+    font-family:candyPop;
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+  }
+
+  button{
+    width: 80%;
+    border: 1px solid white;
+    margin: 20px 10px;
+    margin: 0 auto;
+    border: 1px solid #247080;
+    height: 40px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 18px;
+    font-family: hobostd;
+    border-radius: 10px;
+    background-color: rgba(245, 23, 23, 0.49);
+    text-align: center;
+  }
+}

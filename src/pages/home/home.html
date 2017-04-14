@@ -1,0 +1,27 @@
+<ion-content class="home al-content">
+
+  <al-btn-menu></al-btn-menu>
+
+  <div padding class="al-home">
+    <!-- Logo Aluwa -->
+    <h1 class="al-logo">
+      <img src="assets/img/logo-01.png" alt="logo">
+    </h1>
+
+    <!-- mathématique CP -->
+    <al-header [matiere]="palier.matiere" [classe]="palier.classe"></al-header>
+
+    <al-challange
+      [niveauAPasser]="palier.niveauAPasser"
+      [animalADecouvrir]="palier.animalADecouvrir"
+      [caurisADecrocher]="palier.caurisADecrocher"
+      [pointAGagner]="palier.pointAGagner">
+    </al-challange>
+
+    <div class="al-btn">
+      <button class="al-btn-jouer" ion-button clear #compp page-performance (click)="openPerformance()">Jouer</button>
+    </div>
+
+  </div>
+</ion-content>
+

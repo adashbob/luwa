@@ -1,0 +1,12 @@
+<ion-content class="niveau al-content">
+  <!-- Setting button -->
+  <al-btn-menu></al-btn-menu>
+
+  <!-- aside palier et niveau -->
+  <al-top-aside [niveauADecouvrir]="palier.niveauAPasser" [niveauAPasser]="niveau"></al-top-aside>
+
+  <!-- Tableau de performance -->
+  <al-performance [currentlevel]="palier.currentlevel" [palier]="palier"></al-performance>
+
+
+</ion-content>

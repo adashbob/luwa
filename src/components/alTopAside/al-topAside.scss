@@ -1,0 +1,34 @@
+
+.al-top-aside{
+  .al-palier-niveau{
+    margin-bottom: 60px;
+    button{
+      padding: 7px 19px 7px 7px;
+      position: absolute;
+      color: #111b3b;
+      top: 20px;
+      font-family: 'ubuntuMono';
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .al-palier {
+      button {
+        padding: 7px 7px 7px 19px;
+        text-align: right;
+        background-image: url("../assets/img/bgbtn.png");
+        background-size: cover;
+        left: -10%;
+      }
+    }
+    .al-niveau
+    {
+      text-align: left;
+      button{
+        background-image: url("../assets/img/bgbtn.png");
+        background-size: cover;
+        right: -10%;
+      }
+    }
+  }
+}

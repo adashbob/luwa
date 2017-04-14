@@ -1,0 +1,13 @@
+page-niveau {
+
+  .al-performance{
+    h1{ text-align: center; font-family: 'ubuntuMono'; font-weight: bold; color: white;
+      margin: 0 auto;
+      padding-bottom: 10px; font-size: 20px;}
+    ion-row
+    {
+      margin: 0 auto; text-align: center;}
+      .al-tab-performance{width: 95%;background-color: #d77373; border-radius: 20px;}
+      ion-row:last-child{width: 90%; }
+  }
+}
