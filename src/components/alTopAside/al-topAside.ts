@@ -15,7 +15,7 @@ import {NavController} from "ionic-angular";
 
           <ion-col col-6 class="al-niveau">
             <button ion-button round>
-              {{ niveauAPasser }}/{{ niveauADecouvrir}} Niveau
+              {{ niveauADecouvrir}} Niveaux
             </button>
           </ion-col>
         </ion-row>

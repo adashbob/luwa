@@ -5,8 +5,9 @@
   <!-- aside palier et niveau -->
   <al-top-aside [niveauADecouvrir]="palier.niveauAPasser" [niveauAPasser]="niveau"></al-top-aside>
 
-  <!-- Tableau de performance -->
-  <al-performance [currentlevel]="palier.currentlevel" [palier]="palier"></al-performance>
+  <!-- Table des niveaux palier -->
+  <al-palier [currentlevel]="palier.currentlevel" [palier]="palier"></al-palier>
 
-
+  <!-- Button Next -->
+  <al-btn-next (nextPage)="openCurrentNiveau($event)"></al-btn-next>
 </ion-content>

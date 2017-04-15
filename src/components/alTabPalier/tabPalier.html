@@ -1,8 +1,11 @@
-<ion-grid class="al-performance">
+<ion-grid class="al-palier">
 
-  <h1>Niveau <span style="font-family:sugarpunch; font-size: 23px;">{{ currentlevel }}</span></h1>
+  <h1 padding>
+    Niveau <span>{{ currentlevel }}</span>
+    <img  src="assets/img/68-01.png" alt="prof" width="55">
+  </h1>
 
-  <ion-row class="al-tab-performance" padding>
+  <ion-row class="al-tab-performance" style="margin-top: -20px;" padding >
     <ion-col col-4 *ngFor="let i of range(3)">
       <div style="margin-bottom: 10px;">
         <img #comp page-niveau (click)="openNiveau(palier)" src="assets/images/chiffre.png" alt="dd" style="width: 30%; margin-left: 10px;">
@@ -19,15 +22,5 @@
     <ion-col class="al-btn-performance-palier" margin>Performance palier</ion-col>
     <ion-col class="al-btn-performance-general" margin>Performance générale</ion-col>
   </ion-row>
-  <br>
-
-  <ion-row>
-    <ion-col col-2>
-      <p (click)="goBack()"><img src="assets/images/arrow.png" alt="arrow" style="transform: rotate(-90deg)" ></p>
-    </ion-col>
-    <ion-col col-8></ion-col>
-    <ion-col col-2>
-      <p (click)="goNext()"><img src="assets/images/arrow.png" alt="arrow" style="transform: rotate(90deg)" ></p>
-    </ion-col>
-  </ion-row>
 </ion-grid>
+

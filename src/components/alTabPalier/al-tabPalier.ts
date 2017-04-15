@@ -4,10 +4,10 @@ import {NiveauPage} from "../../pages/niveau/niveau";
 import {Palier} from "../../model/model";
 
 @Component({
-  selector: 'al-performance',
-  templateUrl: 'tabPerformance.html'
+  selector: 'al-palier',
+  templateUrl: 'tabPalier.html'
 })
-export class AlTabPerformancee{
+export class AlTabPalier{
 
   @Input()
   currentlevel : string;

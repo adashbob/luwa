@@ -10,7 +10,8 @@ import { SonsPage } from "../pages/sons/sons";
 import { VocabulairePage } from "../pages/vocabulaire/vocabulaire";
 import { HomePage } from "../pages/home/home";
 import { EntrainementPage } from "../pages/entrainement/entrainement";
-import { PerformancePage } from "../pages/performance/performance";
+import {PalierPage} from "../pages/palier/palier";
+import {AlModel} from "../model/model.service";
 
 
 @Component({
@@ -23,12 +24,12 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private model : AlModel) {
     this.initializeApp();
 
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Performance',  component: PerformancePage },
+      { title: 'Palier',  component: PalierPage },
       { title: 'Entrainnement',  component: EntrainementPage },
       { title: 'Grammaire', component: GrammairePage },
       { title: 'Lecture', component: LecturePage },
@@ -43,6 +44,8 @@ export class MyApp {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      // this.model.createAluwaModel();
     });
   }
 

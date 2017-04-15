@@ -1,11 +1,18 @@
-.al-performance{
+.al-palier{
   h1{
-    margin-top: -1%;
+    margin-top: -20%;
     text-align: center;
     font-family: candyPop;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     color: #f5312c;
+    span{
+      font-family:sugarpunch;
+      font-size: 15px;
+    }
+    img{
+      margin-bottom: -5px;
+    }
   }
   ion-row {
     margin: 0 auto;
@@ -13,23 +20,21 @@
   }
   .al-tab-performance{
     width: 95%;
-    background-color: rgba(245, 23, 23, 0.49);
+    background-color: $al-bg-red;
     border-radius: 20px;
-  }
-  ion-row:last-child{
-    width: 90%;
   }
 
   .al-btn-performance{
     margin-top: 5px;
+    font-family: hobostd;
     ion-col{
       width:49%;
       text-align: center;
       margin: 2px;
       padding: 5px;
-      font-size: 13px;
+      font-size: 11px;
       color: white;
-      background-color: rgba(245, 23, 23, 0.49);
+      background-color: $al-bg-red;
     }
     .al-btn-performance-palier{
       border-top-left-radius: 2em;

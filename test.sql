@@ -241,3 +241,64 @@ update getitransaction set gtrx_nomcli = 'MR IBOU SALL TAILLEUR   ' where gtrx_n
 update getitransaction set gtrx_nomcli = 'LO DAN MAMADOU THIOMBANE' where gtrx_num = '2222233459220';
 update getitransaction set gtrx_nomcli = 'SOCIETE UNIPERSONELLE BPR' where gtrx_num = '2222233463100';
 update getitransaction set gtrx_nomcli = 'GUEYE MOHAMED MOTH' where gtrx_num = '2222233484073';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS mydb.palier_has_activite (
+  idPalier VARCHAR(45) NOT NULL,
+  idActivite VARCHAR(45) NOT NULL,
+  PRIMARY KEY (idPalier, idActivite),
+  INDEX fk_Palier_has_Activite_Activite1_idx (idActivite ASC),
+  INDEX fk_Palier_has_Activite_Palier_idx (idPalier ASC),
+  CONSTRAINT fk_Palier_has_Activite_Palier
+    FOREIGN KEY (idPalier)
+    REFERENCES mydb.palier (idPalier)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_Palier_has_Activite_Activite1
+    FOREIGN KEY (idActivite)
+    REFERENCES mydb.activite (idActivite)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

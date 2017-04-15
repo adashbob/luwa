@@ -5,7 +5,7 @@
   border: 1px solid #000;
   margin-top: 10%;
   border-radius: 20%;
-  background-color: rgba(245, 23, 23, 0.49);
+  background-color: $al-bg-red;
 
   /*-----------------------------------*\
       Resumé niveau
@@ -15,8 +15,8 @@
     .al-col{
       width: 18%;
       display: inline-block;
-
-      font-size: 14px;
+      font-size: 13px;
+      font-family: hobostd;
       color: white;
     }
     .al-col-img{
@@ -33,7 +33,7 @@
 
   .al-mikey{
     width: 100%;
-    margin-top: -20%;
+    margin-top: -16%;
     .al-mikey-row{
       display: inline-block;
       float: right;
