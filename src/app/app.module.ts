@@ -29,6 +29,9 @@ import {PalierPage} from "../pages/palier/palier";
 import {AlTabPalier} from "../components/alTabPalier/al-tabPalier";
 import {AlModel} from "../model/model.service";
 import {SQLite} from "@ionic-native/sqlite";
+import {AlBtnBack} from "../components/alButtonBack/al-btnBack";
+import {AlTitleLecon} from "../components/alTitleLecon/al-titleLecon";
+import {PerformancePage} from "../pages/performance/performance";
 
 @NgModule({
   declarations: [
@@ -42,6 +45,7 @@ import {SQLite} from "@ionic-native/sqlite";
     VocabulairePage,
     EntrainementPage,
     NiveauPage,
+    PerformancePage,
 
     // Gref component
     AlBtnMenu,
@@ -50,7 +54,9 @@ import {SQLite} from "@ionic-native/sqlite";
     AlRecapQuestion,
     AlChallange,
     AlTabPalier,
-    AlBtnNext
+    AlBtnNext,
+    AlBtnBack,
+    AlTitleLecon
   ],
   imports: [
     IonicModule.forRoot(MyApp), ReactiveFormsModule,
@@ -68,6 +74,7 @@ import {SQLite} from "@ionic-native/sqlite";
     VocabulairePage,
     EntrainementPage,
     NiveauPage,
+    PerformancePage,
 
     // Gref component
     AlBtnMenu,
@@ -76,7 +83,9 @@ import {SQLite} from "@ionic-native/sqlite";
     AlRecapQuestion,
     AlChallange,
     AlTabPalier,
-    AlBtnNext
+    AlBtnNext,
+    AlBtnBack,
+    AlTitleLecon
   ],
   providers: [
     StatusBar,

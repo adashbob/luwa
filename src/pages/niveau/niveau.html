@@ -2,13 +2,21 @@
   <!-- Setting button -->
   <al-btn-menu></al-btn-menu>
 
+  <!-- Palier & Niveau -->
   <al-top-aside [niveauAPasser]="lecon.niveau" [niveauADecouvrir]="palier.niveauAPasser"></al-top-aside>
 
+  <!-- Button back -->
+  <al-btn-back (backPage)="goBackPage($event)"></al-btn-back>
+
+  <!-- Matiere  -->
   <al-header [matiere]="lecon.title"></al-header>
 
   <ion-grid padding class="al-performance">
-    <button ion-button class="al-title-lecon al-bg-red">{{ lecon.description }}</button>
+
+    <al-title-lecon [lecon]="lecon.description"></al-title-lecon>
+
     <al-challange
+      [title]="'Challange 1'"
       [niveauAPasser]="ptNiveau"
       [animalADecouvrir]="ptAnimal"
       [caurisADecrocher]="lecon.caurisAGagner"
@@ -18,7 +26,7 @@
 
     <ion-row>
       <ion-col col-12>
-        <button ion-button round #comp page-entrainement (click)="openEntrainement(lecon)">Je m'entraine</button>
+        <button class="btn-entrainement" ion-button round #comp page-entrainement (click)="openEntrainement(lecon)">Je m'entraine</button>
       </ion-col>
     </ion-row>
   </ion-grid>

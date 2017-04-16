@@ -3,7 +3,7 @@
   <al-btn-menu></al-btn-menu>
   <al-top-aside [niveauAPasser]="lecon.niveau" [niveauADecouvrir]="palier.niveauAPasser"></al-top-aside>
   <ion-grid class="al-performance">
-    <button ion-button class="al-title-lecon">{{ lecon.description }}</button>
+    <al-title-lecon [lecon]="lecon.description"></al-title-lecon>
     <br>
 
     <al-recap-question [typeEntrainement]="type" [exerciceNumber]="nbExercice" [validQuestion]="nbValid"></al-recap-question>

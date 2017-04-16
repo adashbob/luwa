@@ -1,0 +1,28 @@
+page-performance {
+  .al-tab-performance{
+    height: 200px;
+    width: 100%;
+    margin-top: 10%;
+    //border: 1px solid #000;
+
+    ion-row{
+      border: 1px solid #F5312C;
+    }
+    ion-col{
+      margin: 7px 5px 7px 5px;
+      border: 1px solid #000;
+      background-color: white;
+      border-top-left-radius: 1.5em;
+      border-top-right-radius: 1.5em;
+
+      .title{
+        margin-top: 3px;
+        padding-bottom: 3px;
+        font-family:hobostd;
+        color: #111b3b;
+        text-align: center;
+        border-bottom: 1px solid #111b3b;
+      }
+    }
+  }
+}

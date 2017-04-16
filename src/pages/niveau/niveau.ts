@@ -41,7 +41,7 @@ export class NiveauPage {
 /**
  * Retour en arrière
  */
-  goBack(){
+  goBackPage(event){
     this.navCtrl.pop();
   }
 

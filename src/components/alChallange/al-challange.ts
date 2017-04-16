@@ -8,6 +8,9 @@ import {NavController} from "ionic-angular";
 export class AlChallange{
 
   @Input()
+  title : string;
+
+  @Input()
   pointAGagner : string;
 
   @Input()

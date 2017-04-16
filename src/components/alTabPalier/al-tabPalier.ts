@@ -1,4 +1,4 @@
-import {Component, Input} from "@angular/core";
+import {Component, EventEmitter, Input, Output} from "@angular/core";
 import {NavController} from "ionic-angular";
 import {NiveauPage} from "../../pages/niveau/niveau";
 import {Palier} from "../../model/model";
@@ -15,6 +15,7 @@ export class AlTabPalier{
   @Input()
   palier : string;
 
+  @Output() performancePage = new EventEmitter();
 
   constructor(public navCtrl : NavController){}
 
@@ -29,6 +30,10 @@ export class AlTabPalier{
   openNiveau(palier: Palier)
   {
     this.navCtrl.push(NiveauPage, {'palier': palier});
+  }
+
+  openPerformance(){
+    this.performancePage.emit({value: 'Go to performance page'})
   }
 
 
