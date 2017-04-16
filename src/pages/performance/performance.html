@@ -5,31 +5,12 @@
   <!-- Button back -->
   <al-btn-back (backPage)="goBackPage($event)"></al-btn-back>
 
-  <!-- mathématique CP -->
-  <al-header [matiere]="'Mathematique'" [classe]="'cp'"></al-header>
-
-  <div class="al-tab-performance">
-    <ion-row>
-      <ion-col class="col-6">
-        <p class="title">Activité Géométrique</p>
-        <p><img width="50" src="assets/img/33-01.png" alt="geometrie"></p>
-      </ion-col>
-      <ion-col class="col-6">
-        <p class="title">Activité Numérique</p>
-        <p><img width="50" src="assets/img/34-01.png" alt="geometrie"></p>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col class="col-6">
-        <p class="title">Activité de Mesures</p>
-        <p><img width="50" src="assets/img/35-01.png" alt="geometrie"></p>
-      </ion-col>
-      <ion-col class="col-6">
-        <p class="title">Résolution de problème</p>
-        <p><img width="50" src="assets/img/36-01-01.png" alt="geometrie"></p>
-      </ion-col>
-    </ion-row>
+  <!-- Mathématique CP -->
+  <div class="al-header">
+    <al-header [matiere]="'Mathematique'" [classe]="'cp'"></al-header>
   </div>
+
+  <!-- Tableau de performance -->
+  <al-tab-performance></al-tab-performance>
 
 </ion-content>

@@ -12,10 +12,11 @@
   \*-----------------------------------*/
   .al-row{
     width: 100%;
+    padding-bottom: 10px;
     .al-col{
       width: 18%;
       display: inline-block;
-      font-size: 13px;
+      font-size: 11px;
       font-family: hobostd;
       color: white;
     }
@@ -28,7 +29,7 @@
     }
   }
   .al-challange-content{
-    margin-bottom: -4%;
+    margin-bottom: -8%;
   }
 
   .al-mikey{

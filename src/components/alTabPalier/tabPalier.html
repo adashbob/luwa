@@ -1,26 +1,26 @@
-<ion-grid class="al-palier">
+<ion-grid class="al-tab-palier">
 
   <h1 padding>
     Niveau <span>{{ currentlevel }}</span>
     <img  src="assets/img/68-01.png" alt="prof" width="55">
   </h1>
 
-  <ion-row class="al-tab-performance" style="margin-top: -20px;" padding >
+  <ion-row class="al-tab-paliercontent" style="margin-top: -20px;" padding >
     <ion-col col-4 *ngFor="let i of range(3)">
       <div style="margin-bottom: 10px;">
-        <img #comp page-niveau (click)="openNiveau(palier)" src="assets/images/chiffre.png" alt="dd" style="width: 30%; margin-left: 10px;">
+        <img #comp page-niveau (click)="openNiveau(palier)" src="assets/images/chiffre.png" alt="chiffre" style="width: 30%; margin-left: 10px;">
         <img src="assets/images/question.png" alt="dd"  style="width: 30%; margin-left: 5px;">
       </div>
       <div *ngFor="let j of range(5)" style="margin-bottom: 10px;">
-        <img src="assets/images/suitecase.png" alt="dd" style="width: 30%; margin-left: 10px;">
-        <img src="assets/images/question.png" alt="dd"  style="width: 30%; margin-left: 5px;">
+        <img src="assets/images/suitecase.png" alt="suitecase" style="width: 30%; margin-left: 10px;">
+        <img src="assets/images/question.png" alt="question"  style="width: 30%; margin-left: 5px;">
       </div>
     </ion-col>
   </ion-row>
 
-  <ion-row no-padding class="al-btn-performance">
-    <ion-col class="al-btn-performance-palier" (click)="openPerformance()" margin>Performance palier</ion-col>
-    <ion-col class="al-btn-performance-general" margin>Performance générale</ion-col>
+  <ion-row no-padding class="al-btn-paliercontent">
+    <ion-col class="al-btn-paliercontent-palier" (click)="openPerformance()" margin>Performance palier</ion-col>
+    <ion-col class="al-btn-paliercontent-general" margin>Performance générale</ion-col>
   </ion-row>
 </ion-grid>
 

@@ -1,10 +1,10 @@
-.al-palier{
+.al-tab-palier{
   h1{
     margin-top: -20%;
     text-align: center;
-    font-family: candyPop;
+    font-family: Amperzand;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     color: #f5312c;
     span{
       font-family:sugarpunch;
@@ -18,13 +18,13 @@
     margin: 0 auto;
     text-align: center;
   }
-  .al-tab-performance{
+  .al-tab-paliercontent{
     width: 95%;
     background-color: $al-bg-red;
     border-radius: 20px;
   }
 
-  .al-btn-performance{
+  .al-btn-paliercontent{
     margin-top: 5px;
     font-family: hobostd;
     ion-col{
@@ -36,11 +36,11 @@
       color: white;
       background-color: $al-bg-red;
     }
-    .al-btn-performance-palier{
+    .al-btn-paliercontent-palier{
       border-top-left-radius: 2em;
       border-bottom-left-radius: 2em;
     }
-    .al-btn-performance-general{
+    .al-btn-paliercontent-general{
       border-top-right-radius: 2em;
       border-bottom-right-radius: 2em;
     }

@@ -8,7 +8,7 @@
   <al-btn-back (backPage)="goBackPage($event)"></al-btn-back>
 
   <!-- Table des niveaux palier -->
-  <al-palier [currentlevel]="palier.currentlevel" [palier]="palier" (performancePage)="openPerformancePage($event)"></al-palier>
+  <al-tab-palier [currentlevel]="palier.currentlevel" [palier]="palier" (performancePage)="openPerformancePage($event)"></al-tab-palier>
 
   <!-- Button Next -->
   <al-btn-next (nextPage)="openCurrentNiveau($event)"></al-btn-next>

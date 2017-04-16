@@ -4,7 +4,7 @@ import {NiveauPage} from "../../pages/niveau/niveau";
 import {Palier} from "../../model/model";
 
 @Component({
-  selector: 'al-palier',
+  selector: 'al-tab-palier',
   templateUrl: 'tabPalier.html'
 })
 export class AlTabPalier{

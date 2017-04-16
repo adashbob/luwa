@@ -32,6 +32,7 @@ import {SQLite} from "@ionic-native/sqlite";
 import {AlBtnBack} from "../components/alButtonBack/al-btnBack";
 import {AlTitleLecon} from "../components/alTitleLecon/al-titleLecon";
 import {PerformancePage} from "../pages/performance/performance";
+import {AlTabPerformance} from "../components/alTabPerformance/al-tabPerformance";
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import {PerformancePage} from "../pages/performance/performance";
     AlRecapQuestion,
     AlChallange,
     AlTabPalier,
+    AlTabPerformance,
     AlBtnNext,
     AlBtnBack,
     AlTitleLecon
@@ -83,6 +85,7 @@ import {PerformancePage} from "../pages/performance/performance";
     AlRecapQuestion,
     AlChallange,
     AlTabPalier,
+    AlTabPerformance,
     AlBtnNext,
     AlBtnBack,
     AlTitleLecon
